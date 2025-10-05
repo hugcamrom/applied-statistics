@@ -1,8 +1,10 @@
 # applied-statistics
-<!-- Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts..
+
+-Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts.
+
 ---
 
-### Requirements
+## Requirements
 
 - [ipython](https://pypi.org/project/ipython/)
 - [numpy](https://pypi.org/project/numpy/)
