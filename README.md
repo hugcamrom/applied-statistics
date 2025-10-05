@@ -16,4 +16,3 @@
 - [scikit-learn](https://pypi.org/project/scikit-learn/)
 - [qiskit[visualization]](https://pypi.org/project/qiskit/)
 - [yfinance](https://pypi.org/project/yfinance/)
-
