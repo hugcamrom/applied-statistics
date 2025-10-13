@@ -12,3 +12,15 @@ No rough work or exploratory notebooks are included here; all drafts are kept lo
 
 ---
 
+## Overview & Purpose
+
+The [**Applied Statistics**](https://atu.ie) module enables students to demonstrate their ability to:
+
+1. **Describe** the stochastic nature of real-world measurements.  
+2. **Source documentation** to programmatically perform a statistical test.  
+3. **Select** the appropriate statistical test to investigate a claim.  
+4. **Perform** a statistical test on a dataset and interpret the results.
+
+This repository serves as a single, self-contained record of work aligned with these learning outcomes.
+
+---
