@@ -1,20 +1,14 @@
-# applied-statistics
+# [**Applied Statistics**](https://en.wikipedia.org/wiki/Statistics#Applied_statistics,_theoretical_statistics_and_mathematical_statistics)
 
--Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts.
+<!--Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts.-->
+
+This repository contains my official submission for the **Applied Statistics** assessment.  
+It is structured, documented, and reproducible — providing a clear demonstration of statistical understanding and computational implementation.
+
+All finalised solutions and explanations are contained within the main notebook:  
+**[`problems.ipynb`](./problems.ipynb)**  
+
+No rough work or exploratory notebooks are included here; all drafts are kept locally.
 
 ---
 
-## Requirements
-
-- [ipython](https://pypi.org/project/ipython/)
-- [numpy](https://pypi.org/project/numpy/)
-- [scipy](https://pypi.org/project/scipy/)
-- [statsmodels](https://pypi.org/project/statsmodels/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-- [pandas](https://pypi.org/project/pandas/)
-- [seaborn](https://pypi.org/project/seaborn/)
-- [sympy](https://pypi.org/project/sympy/)
-- [nose](https://pypi.org/project/nose/)
-- [scikit-learn](https://pypi.org/project/scikit-learn/)
-- [qiskit[visualization]](https://pypi.org/project/qiskit/)
-- [yfinance](https://pypi.org/project/yfinance/)
