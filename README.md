@@ -24,3 +24,22 @@ The [**Applied Statistics**](https://atu.ie) module enables students to demonstr
 This repository serves as a single, self-contained record of work aligned with these learning outcomes.
 
 ---
+
+## Codespaces Environment — *Improved Telegram*
+
+This repository is hosted and developed in [**GitHub Codespaces**](https://docs.github.com/en/codespaces/quickstart), under the workspace named **“improved telegram”**.
+
+By default, a Codespace development environment runs on a **virtual machine (VM)** based on **Ubuntu Linux** and includes many popular tools and languages.  
+This setup ensures a consistent, cloud-based environment regardless of your local operating system.
+
+**Key features:**
+
+- Runs entirely in a **Linux (Ubuntu)** environment.  
+- Compatible with **Python, Jupyter, Git, and command-line utilities** preinstalled.  
+- You can extend or customise the base image with additional libraries or tools.  
+- Windows and macOS are *not* supported as remote container OS options — all Codespaces execute within Linux.  
+- Ideal for running notebooks, simulations, and data visualisations directly in the browser.
+
+This approach ensures maximum reproducibility, consistency, and ease of collaboration.
+
+---
