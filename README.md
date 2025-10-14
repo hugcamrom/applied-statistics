@@ -43,3 +43,22 @@ This setup ensures a consistent, cloud-based environment regardless of your loca
 This approach ensures maximum reproducibility, consistency, and ease of collaboration.
 
 ---
+
+Guidance & Structure
+
+All work is presented in a single Jupyter Notebook: problems.ipynb.
+Each problem section includes:
+
+A short plan/approach (Markdown).
+
+Code cells with clear structure and comments.
+
+Outputs and plots with readable labels.
+
+A brief interpretation and discussion of results.
+
+Headings are consistent and sequential:
+
+**# Applied Statistics** (title) → **## Problem 1**, **## Problem 2**, etc.
+
+--
