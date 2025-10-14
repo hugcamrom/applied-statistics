@@ -44,7 +44,7 @@ This approach ensures maximum reproducibility, consistency, and ease of collabor
 
 ---
 
-Guidance & Structure
+## Guidance & Structure
 
 All work is presented in a single Jupyter Notebook: problems.ipynb.
 Each problem section includes:
@@ -92,5 +92,28 @@ Headings are consistent and sequential:
 - [scikit-learn](https://pypi.org/project/scikit-learn/)
 - [qiskit[visualization]](https://pypi.org/project/qiskit/)
 - [yfinance](https://pypi.org/project/yfinance/)
+
+---
+
+## Problems Overview
+
+Problem 1 — Extending the Lady Tasting Tea
+
+Estimate the probability of correctly identifying all cups under random guessing for 12 cups (8 tea-first, 4 milk-first).
+Compare with the classic 8-cup (4 vs 4) case and discuss implications for p-value thresholds.
+
+Problem 2 — Normal Distribution
+
+Simulate 100,000 samples of size 10 from N(0,1). Compare sample (ddof=1) and population (ddof=0) standard deviations.
+Plot and explain differences as sample size increases.
+
+Problem 3 — t-Tests & Type II Error (β)
+
+For mean differences d ∈ {0, 0.1, …, 1.0}, simulate two-sample t-tests (n=100 per group, α=0.05).
+Estimate β (non-rejection rate) and plot β vs d. Discuss power and implications.
+
+Problem 4 — ANOVA vs Multiple t-Tests
+
+Generate three groups (n=30) with means 0, 0.5, and 1. Compare results from ANOVA and individual t-tests, and explain why ANOVA is preferred when comparing more than two means.
 
 ---
