@@ -117,3 +117,7 @@ Problem 4 — ANOVA vs Multiple t-Tests
 Generate three groups (n=30) with means 0, 0.5, and 1. Compare results from ANOVA and individual t-tests, and explain why ANOVA is preferred when comparing more than two means.
 
 ---
+
+© 2025 Hugo Camacho Romero
+
+---
