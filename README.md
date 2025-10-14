@@ -29,13 +29,13 @@ This repository serves as a single, self-contained record of work aligned with t
 
 This repository is hosted and developed in [**GitHub Codespaces**](https://docs.github.com/en/codespaces/quickstart), under the workspace named **“improved telegram”**.
 
-By default, a Codespace development environment runs on a **virtual machine (VM)** based on **Ubuntu Linux** and includes many popular tools and languages.  
+By default, a Codespace development environment runs on a **virtual machine (VM)** based on [**Ubuntu Linux**](https://en.wikipedia.org/wiki/Ubuntu#:~:text=Ubuntu%20can%20be%20installed%20directly,for%20platforms%20such%20as%20OpenStack.) and includes many popular tools and languages.  
 This setup ensures a consistent, cloud-based environment regardless of your local operating system.
 
 **Key features:**
 
 - Runs entirely in a **Linux (Ubuntu)** environment.  
-- Compatible with **Python, Jupyter, Git, and command-line utilities** preinstalled.  
+- Compatible with **Python, Jupyter, [Git](https://git-scm.com/), and command-line utilities** preinstalled.  
 - You can extend or customise the base image with additional libraries or tools.  
 - Windows and macOS are *not* supported as remote container OS options — all Codespaces execute within Linux.  
 - Ideal for running notebooks, simulations, and data visualisations directly in the browser.
