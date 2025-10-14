@@ -61,4 +61,20 @@ Headings are consistent and sequential:
 
 **# Applied Statistics** (title) → **## Problem 1**, **## Problem 2**, etc.
 
---
+---
+
+## Repository Structure
+
+```bash
+├── README.md             # This file — overview, purpose, and guidance
+├── problems.ipynb        # Main notebook with all solutions (assessment focus)
+├── requirements.txt      # Minimal reproducible environment
+├── .gitignore            # Python + Jupyter configuration
+├── data/                 # (Optional) small datasets if required
+├── images/               # Exported plots or figures
+└── roughwork/            # Not included here (kept locally only)
+
+
+```
+
+---
