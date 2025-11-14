@@ -127,6 +127,16 @@ Commonly referenced documentation includes:
 - [Type I & II Errors — Wikipedia](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 
 ---
+
+Acknowledgements:
+
+ATU course materials and Ian McLoughlin lecturer guidance.
+
+Python libraries: NumPy, SciPy, Pandas, Matplotlib, Statsmodels.
+
+External documentation and statistical references as cited.
+
+---
 © 2025 Hugo Camacho Romero
 
 ---
