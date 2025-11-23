@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/Notebook-Jupyter-orange.svg)](https://jupyter.org/)
+
 ---
 
 This repository contains my official submission for the **Applied Statistics** assessment.  
@@ -81,6 +82,7 @@ Headings are consistent and sequential:
 ```
 
 ---
+
 ## Requirements
 
 The assessment only requires a minimal reproducible environment, provided in **[`requirements.txt`](./requirements.txt)**
