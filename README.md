@@ -77,10 +77,7 @@ Headings are consistent and sequential:
 ├── requirements.txt      # Minimal reproducible environment
 ├── .gitignore            # Python + Jupyter configuration
 ├── data/                 # (Optional) small datasets if required
-├── images/               # Exported plots or figures
-└── roughwork/            # Not included here (kept locally only)
-
-
+└── images/               # Saved plots or figures (optional)
 ```
 
 ---
