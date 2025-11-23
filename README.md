@@ -25,7 +25,9 @@ This repository serves as a single, self-contained record of work aligned with t
 
 ---
 
-## Codespaces Environment — *Improved Telegram*
+## Development Environment — GitHub Codespaces (“improved telegram”)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://docs.github.com/en/codespaces/quickstart)
 
 This repository is hosted and developed in [**GitHub Codespaces**](https://docs.github.com/en/codespaces/quickstart), under the workspace named **“improved telegram”**.
 
@@ -40,7 +42,7 @@ This setup ensures a consistent, cloud-based environment regardless of your loca
 - Windows and macOS are *not* supported as remote container OS options — all Codespaces execute within Linux.  
 - Ideal for running notebooks, simulations, and data visualisations directly in the browser.
 
-This approach ensures maximum reproducibility, consistency, and ease of collaboration.
+This ensures consistent behaviour for numerical computing and plotting across all devices.
 
 ---
 
