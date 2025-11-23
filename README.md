@@ -83,18 +83,27 @@ Headings are consistent and sequential:
 ---
 ## Requirements
 
-- [ipython](https://pypi.org/project/ipython/)
-- [numpy](https://pypi.org/project/numpy/)
-- [scipy](https://pypi.org/project/scipy/)
+The assessment only requires a minimal reproducible environment, provided in **[`requirements.txt`](./requirements.txt)**
+
+However, during development in Codespaces, the following libraries were used:
+
+- [ipython](https://pypi.org/project/ipython/) - code readability
+- [numpy](https://pypi.org/project/numpy/) - numerical copmputing
+- [scipy](https://pypi.org/project/scipy/) - statistical tests (ANOVA, t-tests, Tukey HSD)
+- [pandas](https://pypi.org/project/pandas/) – tabular organisation of results
+- [matplotlib](https://pypi.org/project/matplotlib/) - plots & visualisation
+
+Additional tools available in Codespaces (but not required for assessment) included, for example:
+
+- [Jupyter Notebook](https://jupyter.org/)
 - [statsmodels](https://pypi.org/project/statsmodels/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-- [pandas](https://pypi.org/project/pandas/)
 - [seaborn](https://pypi.org/project/seaborn/)
 - [sympy](https://pypi.org/project/sympy/)
 - [nose](https://pypi.org/project/nose/)
-- [scikit-learn](https://pypi.org/project/scikit-learn/)
 - [qiskit[visualization]](https://pypi.org/project/qiskit/)
 - [yfinance](https://pypi.org/project/yfinance/)
+
+Only the essential libraries used in the final notebook appear in **[`requirements.txt`](./requirements.txt)**
 
 ---
 
