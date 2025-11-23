@@ -2,6 +2,10 @@
 
 <!--Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts.-->
 
+[![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
+[![Jupyter Notebook](https://img.shields.io/badge/Notebook-Jupyter-orange.svg)](https://jupyter.org/)
+---
+
 This repository contains my official submission for the **Applied Statistics** assessment.  
 It is structured, documented, and reproducible — providing a clear demonstration of statistical understanding and computational implementation.
 
