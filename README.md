@@ -131,6 +131,106 @@ Problem 4 — ANOVA vs Multiple t-Tests
 Generate three groups (n=30) with means 0, 0.5, and 1. Compare results from ANOVA and individual t-tests, and explain why ANOVA is preferred when comparing more than two means.
 
 ---
+## Notebook Structure & Problem Summary
+
+All work is contained in a single notebook:
+**[`problems.ipynb`](./problems.ipynb)**
+
+- Each problem follows a consistent pattern:
+
+- Plan & References – what is being done and why, with links to relevant documentation.
+
+- Implementation – clean, well-commented Python code with fixed random seeds.
+
+- Plots & Tables – clear, labelled output.
+
+- Interpretation – concise narrative explaining the results.
+
+### Problem 1 — Extending the Lady Tasting Tea
+
+- Compute the exact probability of a perfect classification in both:
+
+  - the classic 8-cup (4 vs 4) design, and
+
+  - an extended 12-cup design (8 tea-first, 4 milk-first).
+
+- Verify results via simulation.
+
+- Discuss implications for p-values and how design choices affect evidence against the null.
+
+### Problem 2 — Normal Distribution: Sample vs Population SD
+
+- Simulate 100,000 samples of size 10 from N(0, 1).
+
+- Compare ddof=1 (sample SD) vs ddof=0 (population SD).
+
+- Visualise the distributions of both estimators and their finite-sample behaviour.
+
+- Optionally extend the simulation across multiple sample sizes to show convergence towards 
+𝜎
+=
+1
+σ=1.
+
+### Problem 3 — t-Tests & Type II Error (β)
+
+- For mean differences 
+𝑑
+∈
+{
+0
+,
+0.1
+,
+…
+,
+1.0
+}
+d∈{0,0.1,…,1.0}:
+
+- Simulate independent two-sample t-tests with 
+𝑛
+=
+100
+n=100 per group.
+
+- Estimate the probability of not rejecting the null when the alternative is true (Type II error 
+𝛽
+(
+𝑑
+)
+β(d)).
+
+- Plot 
+𝛽
+^
+(
+𝑑
+)
+β
+^
+	​
+
+(d) vs 
+𝑑
+d and interpret in terms of statistical power.
+
+- Problem 4 — ANOVA vs Multiple t-Tests
+
+- Simulate three groups with means 0, 0.5, and 1 (sd = 1, n = 30 each).
+
+- Perform:
+
+  - One-way ANOVA to test equality of all three means.
+
+  - Pairwise t-tests for each group comparison.
+
+  - Tukey’s HSD post-hoc analysis with confidence intervals.
+
+- Discuss why ANOVA is preferred over running multiple unadjusted t-tests and how Tukey’s HSD controls family-wise error.
+
+---
+
 Referencing & Documentation
 
 Citations are included inline near relevant code or text.
