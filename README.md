@@ -2,6 +2,8 @@
 
 <!--Study of the practical use of statistical methods to collect, analyse, interpret, and present data in real-world contexts.-->
 
+![mindtouchbyappliedstats](images\libretextsorg2025-12-07.jpg)
+
 [![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/Notebook-Jupyter-orange.svg)](https://jupyter.org/)
 
@@ -249,6 +251,8 @@ ATU course materials and Ian McLoughlin lecturer guidance.
 Python libraries: NumPy, SciPy, Pandas, Matplotlib, Statsmodels.
 
 External documentation and statistical references as cited.
+
+Image credit: Pixabay (ID 2062057) – Pixabay Content License.
 
 ---
 © 2025 Hugo Camacho Romero
