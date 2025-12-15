@@ -243,6 +243,21 @@ Commonly referenced documentation includes:
 - [Type I & II Errors — Wikipedia](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 
 ---
+Getting Help & AI Usage
+
+During development, I used AI tools (including VSC GitHub Copilot Google AI and ChatGPT) as a support for drafting text, refining explanations, and reviewing code, not as an automatic solution generator.
+
+All code, simulations, and interpretations have been:
+
+Manually checked for correctness and clarity.
+
+Aligned with the module’s assessment instructions and ATU policies on academic integrity.
+
+Referenced appropriately, with inline links to documentation and sources where external ideas or APIs were used.
+
+The responsibility for the final content, structure, and correctness of this repository lies entirely with me as the student.
+
+---
 
 Acknowledgements:
 
