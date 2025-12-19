@@ -228,7 +228,7 @@ d and interpret in terms of statistical power.
 
   - Tukey’s HSD post-hoc analysis with confidence intervals.
 
-- Discuss why ANOVA is preferred over running multiple unadjusted t-tests and how Tukey’s HSD controls family-wise error.
+- Discuss why [ANOVA](https://en.wikipedia.org/wiki/Analysis_of_variance) is preferred over running multiple unadjusted t-tests and how Tukey’s HSD controls family-wise error.
 
 ---
 
@@ -244,7 +244,7 @@ Commonly referenced documentation includes:
 ---
 Getting Help & AI Usage
 
-During development, I used AI tools (including VSC GitHub Copilot Google AI and ChatGPT) as a support for drafting text, refining explanations, and reviewing code, not as an automatic solution generator.
+During development, I used AI tools (including VSC GitHub Copilot, Google AI and ChatGPT) as a support for drafting text, refining explanations, and reviewing code, not as an automatic solution generator.
 
 All code, simulations, and interpretations have been:
 
