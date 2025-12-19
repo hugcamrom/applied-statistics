@@ -1,12 +1,6 @@
 numpy
 scipy
-statsmodels
 matplotlib
 pandas
 ipython
-# seaborn
-# sympy
-# nose
-# scikit-learn
-# qiskit[visualization]
-# yfinance
+
