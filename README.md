@@ -79,8 +79,7 @@ Headings are consistent and sequential:
 ├── problems.ipynb        # Main notebook with all solutions (assessment focus)
 ├── requirements.txt      # Minimal reproducible environment
 ├── .gitignore            # Python + Jupyter configuration
-├── data/                 # (Optional) small datasets if required
-└── images/               # Saved plots or figures (optional)
+└── image/                # figure
 ```
 
 ---
