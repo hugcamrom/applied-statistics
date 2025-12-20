@@ -15,8 +15,6 @@ It is structured, documented, and reproducible — providing a clear demonstrati
 All finalised solutions and explanations are contained within the main notebook:  
 **[`problems.ipynb`](./problems.ipynb)**  
 
-No rough work or exploratory notebooks are included here; all drafts are kept locally.
-
 ---
 
 ## Overview & Purpose
@@ -27,8 +25,6 @@ The [**Applied Statistics**](https://atu.ie) module enables students to demonstr
 2. **Source documentation** to programmatically perform a statistical test.  
 3. **Select** the appropriate statistical test to investigate a claim.  
 4. **Perform** a statistical test on a dataset and interpret the results.
-
-This repository serves as a single, self-contained record of work aligned with these learning outcomes.
 
 ---
 
@@ -49,26 +45,7 @@ This setup ensures a consistent, cloud-based environment regardless of your loca
 - Windows and macOS are *not* supported as remote container OS options — all Codespaces execute within Linux.  
 - Ideal for running notebooks, simulations, and data visualisations directly in the browser.
 
-This ensures consistent behaviour for numerical computing and plotting across all devices.
-
----
-
-## Guidance & Structure
-
-All work is presented in a single Jupyter Notebook: problems.ipynb.
-Each problem section includes:
-
-A short plan/approach (Markdown).
-
-Code cells with clear structure and comments.
-
-Outputs and plots with readable labels.
-
-A brief interpretation and discussion of results.
-
-Headings are consistent and sequential:
-
-**# Applied Statistics** (title) → **## Problem 1**, **## Problem 2**, etc.
+This ensures consistent behaviour for numerical computing and plotting across devices and operating systems.
 
 ---
 
@@ -79,196 +56,122 @@ Headings are consistent and sequential:
 ├── problems.ipynb        # Main notebook with all solutions (assessment focus)
 ├── requirements.txt      # Minimal reproducible environment
 ├── .gitignore            # Python + Jupyter configuration
-└── image/                # figure
+└── images/               # (Optional) saved figures used in the README/notebook
 ```
 
 ---
-
 ## Requirements
 
-The assessment only requires a minimal reproducible environment, provided in **[`requirements.txt`](./requirements.txt)**
+The assessment requires a minimal reproducible environment, provided in **[`requirements.txt`](./requirements.txt)**.
 
-However, during development in Codespaces, the following libraries were used:
+The final notebook uses:
 
-- [ipython](https://pypi.org/project/ipython/) - code readability
-- [numpy](https://pypi.org/project/numpy/) - numerical copmputing
-- [scipy](https://pypi.org/project/scipy/) - statistical tests (ANOVA, t-tests, Tukey HSD)
-- [pandas](https://pypi.org/project/pandas/) – tabular organisation of results
-- [matplotlib](https://pypi.org/project/matplotlib/) - plots & visualisation
+- [NumPy](https://numpy.org/) — numerical computing
+- [SciPy](https://scipy.org/) — statistical tests (t‑tests, ANOVA, Tukey HSD)
+- [Pandas](https://pandas.pydata.org/) — organising results in tables
+- [Matplotlib](https://matplotlib.org/) — plots and visualisation
+- [IPython](https://ipython.org/) — notebook runtime support
 
-Additional tools available in Codespaces (but not required for assessment) included, for example:
+During development, additional libraries may be available in Codespaces, but they are **not required** for running the submitted notebook.
 
-- [Jupyter Notebook](https://jupyter.org/)
-- [statsmodels](https://pypi.org/project/statsmodels/)
-- [seaborn](https://pypi.org/project/seaborn/)
-- [sympy](https://pypi.org/project/sympy/)
-- [nose](https://pypi.org/project/nose/)
-- [qiskit[visualization]](https://pypi.org/project/qiskit/)
-- [yfinance](https://pypi.org/project/yfinance/)
+---
+## How to run
 
-Only the essential libraries used in the final notebook appear in **[`requirements.txt`](./requirements.txt)**
+### Option 1 — Local
+
+```bash
+git clone https://github.com/hugcamrom/applied-statistics.git
+cd applied-statistics
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook
+```
+
+Open **`problems.ipynb`** and run the notebook from top to bottom.
+
+### Option 2 — GitHub Codespaces
+
+Open the repository on GitHub and choose **Code → Create codespace on main**.
+Then open **`problems.ipynb`** and run all cells.
 
 ---
 
-## Problems Overview
+## Notebook structure and problem summary
 
-Problem 1 — Extending the Lady Tasting Tea
+All work is presented in a single notebook: **[`problems.ipynb`](./problems.ipynb)**.
 
-Estimate the probability of correctly identifying all cups under random guessing for 12 cups (8 tea-first, 4 milk-first).
-Compare with the classic 8-cup (4 vs 4) case and discuss implications for p-value thresholds.
+Each problem includes:
 
-Problem 2 — Normal Distribution
-
-Simulate 100,000 samples of size 10 from N(0,1). Compare sample (ddof=1) and population (ddof=0) standard deviations.
-Plot and explain differences as sample size increases.
-
-Problem 3 — t-Tests & Type II Error (β)
-
-For mean differences d ∈ {0, 0.1, …, 1.0}, simulate two-sample t-tests (n=100 per group, α=0.05).
-Estimate β (non-rejection rate) and plot β vs d. Discuss power and implications.
-
-Problem 4 — ANOVA vs Multiple t-Tests
-
-Generate three groups (n=30) with means 0, 0.5, and 1. Compare results from ANOVA and individual t-tests, and explain why ANOVA is preferred when comparing more than two means.
-
----
-## Notebook Structure & Problem Summary
-
-All work is contained in a single notebook:
-**[`problems.ipynb`](./problems.ipynb)**
-
-- Each problem follows a consistent pattern:
-
-- Plan & References – what is being done and why, with links to relevant documentation.
-
-- Implementation – clean, well-commented Python code with fixed random seeds.
-
-- Plots & Tables – clear, labelled output.
-
-- Interpretation – concise narrative explaining the results.
+- **Plan & references** (Markdown)
+- **Implementation** (well‑commented Python code)
+- **Plots & tables** (clear, labelled outputs)
+- **Interpretation** (concise explanation of results)
 
 ### Problem 1 — Extending the Lady Tasting Tea
 
-- Compute the exact probability of a perfect classification in both:
+- Compute and simulate the probability of correctly identifying all cups by chance for:
+  - the classic 8‑cup design (4 tea‑first vs 4 milk‑first), and
+  - an extended 12‑cup design (8 tea‑first vs 4 milk‑first).
+- Compare exact vs simulated probabilities and discuss implications for p‑value thresholds.
 
-  - the classic 8-cup (4 vs 4) design, and
+### Problem 2 — Normal distribution (sample vs population standard deviation)
 
-  - an extended 12-cup design (8 tea-first, 4 milk-first).
+- Generate 100,000 samples of size 10 from a standard normal distribution.
+- Compute the standard deviation using:
+  - `ddof=1` (sample SD), and
+  - `ddof=0` (population SD).
+- Plot both distributions and discuss how differences change as sample size increases.
 
-- Verify results via simulation.
+### Problem 3 — t‑tests and Type II error (β)
 
-- Discuss implications for p-values and how design choices affect evidence against the null.
+- For mean differences \( d \in \{0, 0.1, \dots, 1.0\} \), run 1,000 simulations per value:
+  - draw two samples (n=100 each),
+  - run an independent two‑sample t‑test (α = 0.05),
+  - estimate the Type II error rate \( \beta(d) \) as the proportion of non‑rejections.
+- Plot \( \beta(d) \) against \( d \) and interpret how power increases with effect size.
 
-### Problem 2 — Normal Distribution: Sample vs Population SD
+### Problem 4 — ANOVA vs multiple t‑tests (with Tukey HSD)
 
-- Simulate 100,000 samples of size 10 from N(0, 1).
-
-- Compare ddof=1 (sample SD) vs ddof=0 (population SD).
-
-- Visualise the distributions of both estimators and their finite-sample behaviour.
-
-- Optionally extend the simulation across multiple sample sizes to show convergence towards 
-𝜎
-=
-1
-σ=1.
-
-### Problem 3 — t-Tests & Type II Error (β)
-
-- For mean differences 
-𝑑
-∈
-{
-0
-,
-0.1
-,
-…
-,
-1.0
-}
-d∈{0,0.1,…,1.0}:
-
-- Simulate independent two-sample t-tests with 
-𝑛
-=
-100
-n=100 per group.
-
-- Estimate the probability of not rejecting the null when the alternative is true (Type II error 
-𝛽
-(
-𝑑
-)
-β(d)).
-
-- Plot 
-𝛽
-^
-(
-𝑑
-)
-β
-^
-	​
-
-(d) vs 
-𝑑
-d and interpret in terms of statistical power.
-
-- Problem 4 — ANOVA vs Multiple t-Tests
-
-- Simulate three groups with means 0, 0.5, and 1 (sd = 1, n = 30 each).
-
-- Perform:
-
-  - One-way ANOVA to test equality of all three means.
-
-  - Pairwise t-tests for each group comparison.
-
-  - Tukey’s HSD post-hoc analysis with confidence intervals.
-
-- Discuss why [ANOVA](https://en.wikipedia.org/wiki/Analysis_of_variance) is preferred over running multiple unadjusted t-tests and how Tukey’s HSD controls family-wise error.
+- Generate three groups (n=30 each) from normal distributions with means 0, 0.5, and 1.
+- Compare:
+  - one‑way ANOVA,
+  - three pairwise two‑sample t‑tests,
+  - Tukey’s HSD post‑hoc comparisons.
+- Explain why ANOVA is preferred when comparing more than two means.
 
 ---
 
-Referencing & Documentation
+## Referencing
 
-Citations are included inline near relevant code or text.
-Commonly referenced documentation includes:
+References are included inline near the relevant code or explanation. Commonly used sources include:
 
 - [NumPy Random Generator](https://numpy.org/doc/stable/reference/random/index.html)
 - [scipy.stats.f_oneway](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html)
 - [Type I & II Errors — Wikipedia](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 
 ---
-Getting Help & AI Usage
 
-During development, I used AI tools (including VSC GitHub Copilot, Google AI and ChatGPT) as a support for drafting text, refining explanations, and reviewing code, not as an automatic solution generator.
+## Getting Help & AI Usage
 
-All code, simulations, and interpretations have been:
+During development, I used AI tools (including VSC GitHub Copilot and ChatGPT) as a support for drafting text, refining explanations, and reviewing code, not as an automatic solution generator.
 
-Manually checked for correctness and clarity.
-
-Aligned with the module’s assessment instructions and ATU policies on academic integrity.
-
-Referenced appropriately, with inline links to documentation and sources where external ideas or APIs were used.
-
-The responsibility for the final content, structure, and correctness of this repository lies entirely with me as the student.
+All code, simulations, and interpretations were manually checked for correctness and clarity. The final responsibility for this submission lies with me as the student.
 
 ---
 
-Acknowledgements:
+## Acknowledgements
 
 ATU course materials and Ian McLoughlin lecturer guidance.
 
-Python libraries: NumPy, SciPy, Pandas, Matplotlib, Statsmodels.
+Python libraries: NumPy, SciPy, Pandas, Matplotlib.
 
 External documentation and statistical references as cited.
 
 Image credit: Pixabay (ID 2062057) – Pixabay Content License.
 
 ---
+
 © 2025 Hugo Camacho Romero
 
 ---
